@@ -80,10 +80,6 @@ button a {
         position: relative;
     }
 
-    .btn {
-        
-    }
-
     button {
         background: hsl(235, 18%, 26%);
         box-shadow:  0 0 0 0;
@@ -103,6 +99,5 @@ button a {
 
     p {
         line-height: 1.8;
-        
     }
 }
