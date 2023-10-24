@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(235, 18%, 26%);
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    background-color: #ffff;
+    display: flex;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    gap: 2rem;
+    max-width: 1000px;
+}
+
+.sign-up-info {
+    max-width: max-content;
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+.sign-up-info h1 {
+    font-size: 38px;
+    font-weight: 700;
+    padding: 0.5rem 0;
+}
+
+.sign-up-info p {
+    padding: 1.5rem 0;
+}
+
+.sign-up-info ul {
+    margin-bottom: 35px;
+    padding: 0 1.5rem;
+    list-style-image: url(../assets/images/icon-list.svg);
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-info ul li {
+    padding: 0.45rem;
+    width: max-content;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 0.5rem 0;
+}
+
+form .label .error-msg {
+    color: red;
+}
+
+form input {
+    border-radius: 0.5rem;
+    height: 45px;
+    outline: none;
+    border: 1px solid #000;
+    padding: 1.5rem;
+    font-size: 16px;
+}
+
+form button {
+    margin-top: 25px;
+    height: 50px;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    color: #ffff;
+    font-weight: 400;
+    background-color: transparent;
+    background: linear-gradient(90deg,#ff527b,#ff6744);
+    box-shadow: 0px 5px 5px 1px #ed9884f4;
+    cursor: pointer;
+}
+
+.sign-up-img {
+    max-width: 400px;
+}
+
+.sign-up-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    .sign-up-info {
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (width < 768px) {
+    #container {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .sign-up-info {
+        flex: 1 0 100%;
+        width: 100%;
+    }
+
+    .sign-up-img {
+        width: 100%vw;
+        padding: 0;
+    }
+
+    form button {
+        background: hsl(235, 18%, 26%);
+        box-shadow:  0 0 0 0;
+    }
+}
