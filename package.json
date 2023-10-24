@@ -1,0 +1,11 @@
+{
+  "name": "newsletter-sign-up",
+  "version": "1.0.0",
+  "description": "sign-up-with-success-message",
+  "main": "index.js",
+  "scripts": {
+    "build": "build"
+  },
+  "author": "joylinton",
+  "license": "ISC"
+}

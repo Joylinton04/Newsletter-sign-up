@@ -2,6 +2,13 @@ const submitBtn = document.querySelector('#submit')
 const emailInput = document.querySelector('#email')
 const errorMsg = document.querySelector('.error-msg')
 
+function active() {
+    if(emailInput.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{3}$/)) {
+        submitBtn.style.background = "linear-gradient(90deg,#ff527b,#ff6744)"
+    } else {
+        submitBtn.style.background = "hsl(235, 18%, 26%)"
+    }
+}
 
 const handleError = (e) => {
     e.preventDefault()
